@@ -13,21 +13,20 @@ public class Main {
         course1.setName("Java Backend");
         course1.setCapacity(30);
 
+        // заполняем Student
+        Student student = new Student();
+        student.setName("Volodya");
+        student.setAge(19);
+        student.setChosenCourse(course1.getName());
+
         List<Student> studentList = new ArrayList<>();
-        Student student1 = new Student("Петр", 19, course1);
-        studentList.add(student1);
+        studentList.add(student);
 
         // заполняем Lesson
         Lesson lesson = new Lesson();
         lesson.setTopic("Generics");
         lesson.setCountOfLessons(2);
         lesson.setStudentsList(studentList);
-
-        // заполняем Student
-        Student student = new Student();
-        student.setName("Volodya");
-        student.setAge(19);
-        student.setChosenCourse(course1);
 
         serializer1.serializeToJson(course1, lesson, student, jsonFilepath);
         serializer2.serializeToXml(course1, lesson, student, xmlFilepath);

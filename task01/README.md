@@ -1,0 +1,1 @@
+# Simple serializer of Java classes into JSON-, XML-files

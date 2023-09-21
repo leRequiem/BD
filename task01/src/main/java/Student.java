@@ -9,5 +9,5 @@ import java.io.Serializable;
 public class Student implements Serializable {
     private String name;
     private int age;
-    private String chosenCourse;
+    private OptionalCourse chosenCourse;
 }

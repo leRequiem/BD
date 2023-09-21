@@ -17,7 +17,7 @@ public class Main {
         Student student = new Student();
         student.setName("Volodya");
         student.setAge(19);
-        student.setChosenCourse(course1.getName());
+        student.setChosenCourse(course1);
 
         List<Student> studentList = new ArrayList<>();
         studentList.add(student);

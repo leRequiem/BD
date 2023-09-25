@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class XmlSerializer {
-    public void serializeToXml(OptionalCourse course, Lesson lesson, Student student, String filepath) {
+    public void serializeToXml(Course course, Lesson lesson, Student student, String filepath) {
 
         DataContainer dataContainer = new DataContainer();
         dataContainer.setLesson(lesson);

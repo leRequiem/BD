@@ -3,7 +3,7 @@ import com.google.gson.Gson;
 import java.io.*;
 
 public class JsonSerializer {
-    public void serializeToJson(OptionalCourse course, Lesson lesson, Student student, String filepath) {
+    public void serializeToJson(Course course, Lesson lesson, Student student, String filepath) {
         Gson gson = new Gson();
         DataContainer dataContainer = new DataContainer();
         dataContainer.setLesson(lesson);

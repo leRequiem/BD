@@ -4,6 +4,6 @@ import lombok.Setter;
 @Getter @Setter
 public class DataContainer {
     private Lesson lesson;
-    private OptionalCourse optionalCourse;
+    private Course optionalCourse;
     private Student student;
 }

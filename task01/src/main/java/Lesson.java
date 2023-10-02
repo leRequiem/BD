@@ -6,8 +6,7 @@ import java.util.List;
 
 @NoArgsConstructor @Getter @Setter
 public class Lesson {
-    private String courseName;
+    private Course course;
     private String topic;
-    private List<Student> studentsList;
     private int countOfLessons;
 }
